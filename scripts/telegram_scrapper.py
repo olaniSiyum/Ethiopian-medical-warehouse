@@ -18,7 +18,7 @@ logging.basicConfig(
 )
 
 # Load environment variables
-load_dotenv('.env')
+load_dotenv('../.env')
 api_id = os.getenv('TG_API_ID')
 api_hash = os.getenv('TG_API_HASH')
 phone = os.getenv('phone')
@@ -97,9 +97,9 @@ async def main():
         ]
 
         # Scrape photos from the specified channels
-        #for channel in photo_channels:
-            #await scrape_photos(client, channel, media_dir)
-            #print(f"Scraped photos from {channel}")
+        for channel in photo_channels:
+            await scrape_photos(client, channel, media_dir)
+            print(f"Scraped photos from {channel}")
 
         # Scrape messages from the other channels
         for channel in message_channels:
