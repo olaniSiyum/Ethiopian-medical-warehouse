@@ -3,3 +3,11 @@ numpy
 seaborn
 matplotlib
 telethon
+pyaes
+pyasn1
+python-dateutil
+python-dotenv
+pytz
+rsa
+six
+tzdata
